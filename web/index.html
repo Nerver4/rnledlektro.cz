@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="grid.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RN led elektro instalace</title>
+	<link rel="icon" href="images/favicon-16x16.png">
+	
+	
+</head>
+<body>
+	<header>
+
+		<div class="nav-bar">
+			<div id="logo"> 			
+				<!-- Odkaz na "index.html" s logem -->
+				<a href="index.html">
+					<img id="logo" src="images/RN logo.png" alt="RNelektro">
+				</a>
+			</div>
+		</div>	
+			<nav>
+				<ul>
+					
+					<li class="hideOnMobile"><a href="fotogalerie.html">Fotogalerie</a></li>
+					<li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+					<li class="hideOnMobile"><a href="oNás.html">O nás</a></li>	
+					<li class="hideSbar Sbar" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+				</ul>
+				<ul class="sidebar">
+					<li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+					<li><a href="fotogalerie.html">Fotogalerie</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="oNás.html">O nás</a></li>	
+				</ul>
+			</nav>
+
+			<script>
+				function showSidebar(){
+					const sidebar = document.querySelector('.sidebar')
+					sidebar.style.display = 'flex'
+				}
+				function hideSidebar(){
+					const sidebar = document.querySelector('.sidebar')
+					sidebar.style.display = 'none'
+				}
+			</script>
+
+		</div>
+		<div class="clearfix">
+			<div class="header-text">
+				<h1>RN elektro</h1>
+				<a href="fotogalerie.html" class="btn btn-full">Fotogalerie</a>
+				<a href="cenik.html" class="btn btn-empty">Ceník</a>
+			</div>
+		</div>
+			
+	</header>
+
+	<main>
+		
+
+	</main>
+
+	<footer>
+	
+	</footer>    
+</body>
+</html>
